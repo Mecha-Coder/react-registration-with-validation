@@ -1,0 +1,46 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.app{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: dodgerblue;
+
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+
+.container{
+  width: 320px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+button{
+  color: black;
+  font-weight: bold;
+  padding: 10px 0px;
+  border-radius: 10px;
+  border: none;
+}
+
+input{
+  display: block;
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  font-family: sans-serif;
+  width: calc(100% - 40px);
+}
