@@ -3,9 +3,9 @@ import Register from './Register';
 
 function App() {
   return (
-   <div className="app">
+   <main className="app">
     <Register />
-   </div>
+   </main>
   );
 }
 

@@ -1,30 +1,27 @@
 *{
   padding: 0px;
   margin: 0px;
-  color: white;
   font-family: sans-serif;
 }
 
-.app{
+main{
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: dodgerblue;
-
   top: 0px;
   right: 0px;
   left: 0px;
   bottom: 0px;
 }
 
-.container{
-  width: 320px;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 20px;
+p,label,h2, span{color:white}
+
+label{
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  line-height: 35px;
 }
 
 button{
@@ -40,7 +37,40 @@ input{
   padding: 8px 20px;
   border-radius: 10px;
   border: none;
-  color: black;
   font-family: sans-serif;
   width: calc(100% - 40px);
+}
+
+input:focus {
+  outline: 3px ridge gold;
+}
+
+span{
+  display: block;
+  padding-left: 12px;
+  text-indent: -12px;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+.container{
+  width: 320px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info{
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px 10px 10px 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.top-right{
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
