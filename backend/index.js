@@ -13,7 +13,10 @@ const MONGO_URL = process.env.MONGO_URL
 // Middleware
 app.use(express.urlencoded({extended: true}));
 app.use(cors({
-  origin: "http://localhost:3000"
+  origin: 'http://localhost:3000',
+  methods: ['GET', 'POST'],
+  optionsSuccessStatus: 200, 
+  credentials: true, 
 }))
 
 

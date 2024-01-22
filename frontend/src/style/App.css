@@ -16,7 +16,7 @@ main{
   bottom: 0px;
 }
 
-p,label,h2, span{color:white}
+p,label,h2, span, h1, h3,.font-white{color:white}
 
 label{
   display: flex;
@@ -30,6 +30,7 @@ button{
   padding: 10px 0px;
   border-radius: 10px;
   border: none;
+  margin-top: 30px;
 }
 
 input{
@@ -53,6 +54,10 @@ span{
   font-size: 14px;
 }
 
+section{
+  position: relative;
+}
+
 .container{
   width: 320px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -67,10 +72,31 @@ span{
   padding: 15px 10px 10px 10px;
   border-radius: 10px;
   position: relative;
+  margin-top: 10px;
 }
 
 .top-right{
   position: absolute;
   right: 10px;
   top: 10px;
+}
+
+.error-box{
+  background-color: rgba(254, 138, 138, 0.8);
+  color:  black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.button{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.show-pass{
+  position: absolute;
+  right: 10px;
+  top: 41px;
+
+  cursor: pointer
 }
