@@ -7,11 +7,11 @@ const backend = axios.create({
   },
 });
 
-function handleReturn(status,errMsg = ""){
+function handleReturn(status,data = ""){
   // Params
   // status - Boolean
-  // errMsg - String
-  return {status, errMsg}
+  // data - String, Object anything
+  return {status, data}
 }
 
 export {backend, handleReturn}

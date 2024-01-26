@@ -9,14 +9,15 @@ function Main() {
 
   function handleClick(){
     setAuth("")
+    localStorage.removeItem('authUserXXX');
     navigate("/")
   }
 
   return (
     <Container>
       <h1>Main page</h1>
-      <h2>Hi 👋🏻 {auth.username}</h2>
-      <h3>Your user ID is {auth.userId}</h3>
+      <h2>Hi 👋🏻 {auth?.username}</h2>
+      <h3>Your user ID is {auth?.userId}</h3>
       <p className="button" onClick={handleClick}>Sign out</p>
     </Container>
   )

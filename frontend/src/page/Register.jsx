@@ -13,7 +13,7 @@ function Register() {
     const result = await createAccount(username,email,password)
     
     if(result.status) {setSuccess(true)}
-    else              {setError(result.errMsg)}
+    else              {setError(result.data)}
 
   }
 

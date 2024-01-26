@@ -82,8 +82,8 @@ section{
 }
 
 .error-box{
-  background-color: rgba(254, 138, 138, 0.8);
-  color:  black;
+  background-color: rgb(147, 43, 43);
+  color:  white;
   padding: 10px;
   border-radius: 10px;
 }

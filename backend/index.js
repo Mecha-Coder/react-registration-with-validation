@@ -3,7 +3,8 @@ import express from "express"
 import mongoose from "mongoose"
 import cors from "cors"
 import blankRoute from "./routes/blankRoute.js"
-import userRoute from "./routes/userRoute.js"
+import loginRoute from "./routes/user/loginRoute.js"
+import registerRoute from "./routes/user/registerRoute.js"
 
 // CONSTANT
 const app = express()
@@ -31,5 +32,9 @@ catch (error) {console.log(error)}
 
 
 //Routes
+//Black route
 app.use("/", blankRoute)
-app.use("/user", userRoute)
+
+//User route
+app.use("/user/register", registerRoute)
+app.use("/user/login", loginRoute)
